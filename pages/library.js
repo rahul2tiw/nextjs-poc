@@ -5,7 +5,7 @@ import Post from '../components/post'
 import ListItem from '../components/listItem'
 import Button from '../components/button'
 
-
+// This is an array where we will put in all the components for the library
 const list = [{
   id: 1,
   label: 'Button',
@@ -29,6 +29,7 @@ export default class Library extends React.Component {
     }
   }
 
+  // This method renders all the properties in the component that are written in the list
   renderProperties = (properties) => {
     const keys = Object.keys(properties)
     const arr = []
